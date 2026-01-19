@@ -1,0 +1,322 @@
+/* =========================================================
+   RESET + BASE
+   ========================================================= */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --text: #111111;
+    --text-muted: #666666;
+    --border: #e5e5e5;
+
+    --primary: #111111;
+    --accent: #2563eb;
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+
+    --font: 'Inter', sans-serif;
+}
+
+body.dark {
+    --bg: #0f0f0f;
+    --bg-secondary: #1a1a1a;
+    --text: #f5f5f5;
+    --text-muted: #aaaaaa;
+    --border: #2a2a2a;
+    --primary: #f5f5f5;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+.container {
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+.header {
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+#themeToggle,
+#menuToggle {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+/* =========================================================
+   MENU MOBILE
+   ========================================================= */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    border-top: 1px solid var(--border);
+    background: var(--bg);
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu .nav-link {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+}
+
+/* =========================================================
+   NAV LINKS
+   ========================================================= */
+.nav-link {
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.nav-link.active {
+    color: var(--text);
+    font-weight: 600;
+}
+
+/* =========================================================
+   MAIN / TABS
+   ========================================================= */
+.main {
+    min-height: 100vh;
+}
+
+.tab-section {
+    display: none;
+    padding: 40px 0;
+}
+
+.tab-section.active {
+    display: block;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    color: var(--text-muted);
+    margin-bottom: 24px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.btn {
+    padding: 14px;
+    border-radius: var(--radius-md);
+    border: 1px solid transparent;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background: var(--primary);
+    color: var(--bg);
+}
+
+.btn.outline {
+    background: none;
+    border-color: var(--border);
+    color: var(--text);
+}
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+.section-header {
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+}
+
+.section-header p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* =========================================================
+   GRID
+   ========================================================= */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+.card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    background: var(--bg-secondary);
+    cursor: pointer;
+}
+
+.card h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* =========================================================
+   FORM
+   ========================================================= */
+.form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form input,
+.form textarea,
+input[type="range"] {
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* =========================================================
+   KITS ROUPAS
+   ========================================================= */
+#kitsContainer {
+    margin-top: 20px;
+}
+
+.kit-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.kit-items p {
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg-secondary);
+    margin-bottom: 6px;
+}
+
+/* =========================================================
+   MODELS DE TELEFONE
+   ========================================================= */
+.models-container {
+    margin-top: 20px;
+}
+
+.sub-models p {
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg-secondary);
+    margin-bottom: 6px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.footer {
+    border-top: 1px solid var(--border);
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* =========================================================
+   MOBILE FIRST CONCLUÍDO
+   ========================================================= */
+
+/* =========================================================
+   TABLET ≥768px
+   ========================================================= */
+@media (min-width: 768px) {
+    .container { max-width: 720px; }
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .hero h1 { font-size: 2.2rem; }
+    .hero-actions { flex-direction: row; }
+}
+
+/* =========================================================
+   DESKTOP ≥1024px
+   ========================================================= */
+@media (min-width: 1024px) {
+    .container { max-width: 1100px; }
+    .desktop-only { display: flex; gap: 20px; }
+    .mobile-only { display: none; }
+    .grid { grid-template-columns: repeat(3, 1fr); }
+    .hero h1 { font-size: 2.6rem; }
+}
