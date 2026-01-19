@@ -681,3 +681,107 @@ p {
   }
 
 }
+/* ===== MOBILE ORGANIZADO – LOJINHA DREHMER ===== */
+@media (max-width: 768px){
+
+  /* container com mais respiro */
+  .container{
+    width: 94%;
+  }
+
+  /* HEADER */
+  .header-content{
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  /* logo menor e centralizada */
+  .logo,
+  .logo-main{
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+  }
+
+  /* NAV vira grid 2 colunas */
+  .nav-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-list li{
+    width: 100%;
+  }
+
+  .nav-list li button{
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+
+  /* icones (dark + carrinho) alinhados */
+  #darkModeToggle,
+  #cartButton{
+    font-size: 1.4rem;
+  }
+
+  /* TITULOS */
+  h1{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  p{
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  /* ===== ROUPAS / KITS ===== */
+
+  .kits-overview{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .kit-card{
+    width: 100%;
+    padding: 14px 10px;
+  }
+
+  .kit-card img{
+    height: 110px;
+  }
+
+  /* itens dentro do kit */
+  .kit-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .kit-items .kit-item{
+    width: 100%;
+    padding: 14px 8px;
+  }
+
+  /* ===== CARRINHO ===== */
+  #cartSidebar{
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 16px;
+  }
+}
+
+/* celular muito pequeno */
+@media (max-width: 420px){
+  .kits-overview,
+  .kit-items{
+    grid-template-columns: 1fr;
+  }
+}
