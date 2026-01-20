@@ -899,3 +899,38 @@ p {
     max-height: 80px;
   }
 }
+/* ===== ARRUMA HEADER GIGANTE NO MOBILE ===== */
+@media (max-width: 768px){
+
+  header{
+    padding: 10px 0 !important;
+  }
+
+  .header-content{
+    gap: 6px !important;
+  }
+
+  /* Logo menor */
+  .logo-main{
+    font-size: 1.5rem !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 4px !important;
+  }
+
+  /* menu mais compacto */
+  .nav-list{
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 6px !important;
+  }
+
+  .nav-list li button{
+    padding: 8px 4px !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* icones menores */
+  #darkModeToggle,
+  #cartButton{
+    font-size: 1.2rem !important;
+  }
+}
