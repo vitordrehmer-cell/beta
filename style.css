@@ -1045,3 +1045,25 @@ p {
   }
 
 }
+/* ===== CONSERTA CARRINHO NO MOBILE (SEM MEXER NO PC) ===== */
+@media (max-width: 768px){
+
+  #cartPanel{
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 85% !important;
+    max-width: 320px !important;
+    height: 100vh !important;
+    z-index: 3000 !important;
+
+    /* começa escondido fora da tela */
+    transform: translateX(100%) !important;
+  }
+
+  /* quando abre */
+  #cartPanel:not(.hidden){
+    transform: translateX(0) !important;
+  }
+
+}
