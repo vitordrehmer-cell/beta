@@ -1068,19 +1068,19 @@ p {
   }
 
 }
-/* ===== BOTÃO DARK MODE DENTRO DO CARRINHO (MOBILE) ===== */
+/* ===== BOTÃO FECHAR (X) NO CARRINHO MOBILE ===== */
 @media (max-width: 768px){
 
-  /* esconde do header */
-  #darkModeToggle{
-    display: none !important;
-  }
-
-  /* mostra dentro do carrinho */
-  #cartPanel #darkModeToggle{
-    display: inline-block !important;
-    margin-bottom: 10px !important;
-    font-size: 1.4rem !important;
+  #cartPanel::before{
+    content: "✕";
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 4000;
   }
 
 }
+
