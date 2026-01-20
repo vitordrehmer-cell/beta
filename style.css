@@ -970,3 +970,85 @@ p {
     padding: 8px !important;
   }
 }
+/* ===== HEADER MOBILE COMPACTO COM ÍCONES AO LADO DA LOGO ===== */
+@media (max-width: 768px){
+
+  header{
+    padding: 8px 0 !important;
+  }
+
+  .header-content{
+    display: grid !important;
+    grid-template-columns: 40px 1fr 40px !important; /* ícone | logo | ícone */
+    align-items: center !important;
+    gap: 6px !important;
+  }
+
+  /* força posição dos ícones */
+  #darkModeToggle{
+    grid-column: 1;
+    justify-self: center;
+    font-size: 1.2rem !important;
+  }
+
+  #cartButton{
+    grid-column: 3;
+    justify-self: center;
+    font-size: 1.2rem !important;
+  }
+
+  /* logo central e menor */
+  .logo-main{
+    grid-column: 2;
+    text-align: center;
+    font-size: 1.4rem !important;
+    letter-spacing: 2px !important;
+    margin: 0 !important;
+  }
+
+  /* menu mais compacto e em 3 colunas */
+  .nav-list{
+    grid-column: 1 / 4; /* ocupa a linha inteira */
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 6px !important;
+    margin-top: 6px !important;
+  }
+
+  .nav-list li button{
+    padding: 7px 4px !important;
+    font-size: 0.82rem !important;
+    border-radius: 8px !important;
+  }
+}
+/* ===== FORÇA KITS EM GRID NO MOBILE ===== */
+@media (max-width: 768px){
+
+  .kits-overview{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .kit-card{
+    padding: 8px !important;
+    border-radius: 12px !important;
+  }
+
+  .kit-card img{
+    max-height: 110px !important;
+    object-fit: contain !important;
+  }
+
+  .kit-card h3,
+  .kit-card p{
+    font-size: 0.85rem !important;
+  }
+}
+
+/* celular muito pequeno continua 2, mas menor */
+@media (max-width: 420px){
+  .kit-card img{
+    max-height: 95px !important;
+  }
+}
