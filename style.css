@@ -1052,3 +1052,57 @@ p {
     max-height: 95px !important;
   }
 }
+/* ================= PATCH MOBILE SEGURO ================= */
+@media (max-width: 768px){
+
+  /* Header mais baixo */
+  .header{
+    padding: 8px 0 !important;
+  }
+
+  .header-content{
+    gap: 6px !important;
+  }
+
+  /* Logo menor */
+  .logo-main{
+    font-size: 1.4rem !important;
+    letter-spacing: 2px !important;
+    margin: 0 !important;
+  }
+
+  /* Ícones menores */
+  #darkModeToggle,
+  #cartButton{
+    font-size: 1.2rem !important;
+  }
+
+  /* Menu mais compacto */
+  .nav-list{
+    gap: 6px !important;
+  }
+
+  .nav-list li button{
+    padding: 7px 4px !important;
+    font-size: 0.82rem !important;
+    border-radius: 8px !important;
+  }
+
+  /* Kits em grid 2 por linha */
+  .kits-overview{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .kit-card{
+    width: 100% !important;
+    padding: 8px !important;
+  }
+
+  .kit-card img{
+    max-height: 110px !important;
+    object-fit: contain !important;
+  }
+
+}
