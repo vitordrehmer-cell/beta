@@ -970,3 +970,19 @@ p {
     padding: 8px !important;
   }
 }
+/* ===== MENU EM UMA LINHA NO CELULAR ===== */
+@media (max-width: 768px){
+
+  .nav-list{
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    gap: 4px !important;
+  }
+
+  .nav-list li button{
+    padding: 6px 6px !important;
+    font-size: 0.78rem !important;
+    white-space: nowrap !important;
+  }
+
+}
