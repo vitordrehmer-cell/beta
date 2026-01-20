@@ -97,6 +97,13 @@ document.addEventListener("DOMContentLoaded", () => {
   let cart = JSON.parse(localStorage.getItem("cart_drehmer") || "[]");
 
   const cartToggle = document.getElementById("cartToggle");
+ document.addEventListener("click", (e) => {
+  if (e.target.textContent === "✕") {
+    const panel = document.getElementById("cartPanel");
+    if(panel) panel.classList.add("hidden");
+  }
+});
+
   const cartSidebar = document.getElementById("cartSidebar");
   const cartItemsEl = document.getElementById("cartItems");
   const cartTotalEl = document.getElementById("cartTotal");
