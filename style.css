@@ -785,3 +785,117 @@ p {
     grid-template-columns: 1fr;
   }
 }
+/* ===== MOBILE COMPACTO (ANDROID / iOS) ===== */
+@media (max-width: 768px){
+
+  body{
+    font-size: 14px;
+  }
+
+  .container{
+    width: 94%;
+  }
+
+  /* HEADER mais compacto */
+  .header-content{
+    gap: 8px;
+  }
+
+  .logo-main{
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+  }
+
+  /* MENU em grid compacto */
+  .nav-list{
+    gap: 6px;
+  }
+
+  .nav-list li button{
+    padding: 8px 6px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+  }
+
+  /* TITULOS */
+  h1{
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
+
+  p{
+    font-size: 0.9rem;
+  }
+
+  /* ===== KITS ===== */
+
+  .kits-overview{
+    gap: 12px;
+  }
+
+  .kit-card{
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .kit-card img{
+    max-height: 140px;
+    object-fit: contain;
+  }
+
+  .kit-card h3{
+    font-size: 1rem;
+  }
+
+  /* ===== ITENS DO KIT ===== */
+
+  .kit-items{
+    gap: 10px;
+  }
+
+  .kit-item{
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .kit-item img{
+    max-height: 90px;
+  }
+
+  .kit-item p{
+    font-size: 0.85rem;
+  }
+
+  .kit-item .btn{
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  /* ===== BOTÕES EM GERAL ===== */
+  .btn{
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    border-radius: 8px;
+  }
+
+  /* ===== CARRINHO ===== */
+  #cartSidebar{
+    padding: 12px;
+  }
+}
+
+/* celulares pequenos */
+@media (max-width: 420px){
+
+  body{
+    font-size: 13px;
+  }
+
+  .kit-card img{
+    max-height: 120px;
+  }
+
+  .kit-item img{
+    max-height: 80px;
+  }
+}
