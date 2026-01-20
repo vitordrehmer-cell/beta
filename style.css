@@ -934,3 +934,39 @@ p {
     font-size: 1.2rem !important;
   }
 }
+/* ===== KITS EM GRID NO MOBILE (2 POR LINHA) ===== */
+@media (max-width: 768px){
+
+  .kits-overview{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  .kit-card{
+    padding: 10px !important;
+    border-radius: 12px !important;
+  }
+
+  .kit-card img{
+    max-height: 120px !important;
+    object-fit: contain !important;
+  }
+
+  .kit-card h3,
+  .kit-card p{
+    font-size: 0.9rem !important;
+  }
+}
+
+/* celular muito pequeno: continua 2, mas mais compacto */
+@media (max-width: 420px){
+
+  .kit-card img{
+    max-height: 100px !important;
+  }
+
+  .kit-card{
+    padding: 8px !important;
+  }
+}
